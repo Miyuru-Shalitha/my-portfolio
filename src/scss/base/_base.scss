@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 *,
 *::after,
 *::before {
@@ -7,13 +9,15 @@
 }
 
 html {
+  font-size: $default-font-size;
 }
 
 body {
   box-sizing: border-box;
+  padding: rem(30);
 }
 
 ::selection {
-  // background-color: #ffff00; // TEST
-  // color: #00ffff; // TEST
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
 }
