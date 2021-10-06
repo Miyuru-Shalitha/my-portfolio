@@ -1,5 +1,7 @@
 @use "../abstracts" as *;
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+
 *,
 *::after,
 *::before {
@@ -15,9 +17,16 @@ html {
 body {
   box-sizing: border-box;
   padding: rem(30);
+
+  font-family: "Roboto", sans-serif;
+  letter-spacing: rem(2);
 }
 
 ::selection {
   background-color: var(--color-primary-light);
   color: var(--color-primary);
 }
+
+// @font-face {
+
+// }
