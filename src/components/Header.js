@@ -3,7 +3,7 @@ import resume from "../assets/resume/resume.txt";
 
 function Header() {
   return (
-    <header className="header">
+    <header id="header" className="header">
       <div className="header__text-box u-margin-bottom-medium">
         <h1 className="heading-primary">Hi! I'm Miyuru Shalitha</h1>
       </div>

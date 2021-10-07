@@ -1,5 +1,5 @@
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(
       to right bottom,
       var(--color-header-background-light),
@@ -8,6 +8,7 @@
     url(../../assets/images/header-img.jpg);
   background-size: cover;
   background-position: center;
+  text-align: center;
 
   display: flex;
   flex-direction: column;
