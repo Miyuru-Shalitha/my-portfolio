@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__text-box u-margin-bottom-medium">
-        <h1 className="heading-primary">Hi! I Am Miyuru Shalitha</h1>
+        <h1 className="heading-primary">Hi! I'm Miyuru Shalitha</h1>
       </div>
 
       <a download="resume.txt" href={resume} className="btn btn--white">
