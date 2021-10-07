@@ -1,5 +1,8 @@
 import React from "react";
 import Project from "./Project";
+import cardImage from "../../assets/images/quiz-app.PNG";
+import todoListCalender from "../../assets/images/todo-list-calender.PNG";
+import pomodoroTimer from "../../assets/images/pomodoro-timer.PNG";
 
 function Projects() {
   return (
@@ -9,12 +12,35 @@ function Projects() {
       </div>
 
       <div className="projects__container u-margin-top-medium">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project
+          imageUrl={cardImage}
+          title="Quiz App"
+          description="lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet,
+            consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum
+            dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur
+            lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet,
+            consectetur"
+        />
+
+        <Project
+          imageUrl={todoListCalender}
+          title="todo-list calender"
+          description="lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet,
+            consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum
+            dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur
+            lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet,
+            consectetur"
+        />
+
+        <Project
+          imageUrl={pomodoroTimer}
+          title="Pomodoro Timer"
+          description="lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet,
+            consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum
+            dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur
+            lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet,
+            consectetur"
+        />
       </div>
     </section>
   );

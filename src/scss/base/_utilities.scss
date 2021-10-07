@@ -1,9 +1,17 @@
 @use "../abstracts" as *;
 
+.u-margin-bottom-small {
+  margin-bottom: rem(20) !important;
+}
+
 .u-margin-bottom-medium {
   margin-bottom: rem(30) !important;
 }
 
 .u-margin-top-medium {
   margin-top: rem(30) !important;
+}
+
+.u-center-heading {
+  text-align: center !important;
 }
