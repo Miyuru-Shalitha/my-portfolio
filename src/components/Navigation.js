@@ -8,7 +8,7 @@ function Navigation() {
           <a href="#header">Home</a>
         </li>
         <li>
-          <a href="#header">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
           <a href="#header">About</a>

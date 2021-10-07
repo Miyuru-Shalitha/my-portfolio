@@ -3,7 +3,7 @@ import Project from "./Project";
 
 function Projects() {
   return (
-    <section className="projects u-margin-top-medium">
+    <section id="projects" className="projects u-margin-top-medium">
       <div className="projects__heading">
         <h2 className="heading-secondary">Projects</h2>
       </div>
