@@ -26,4 +26,9 @@
     background-color: var(--color-white);
     color: var(--color-grey-dark-3);
   }
+
+  &--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
 }

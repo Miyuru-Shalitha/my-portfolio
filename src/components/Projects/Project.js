@@ -1,6 +1,6 @@
 import React from "react";
 
-function Project({ imageUrl, title, description }) {
+function Project({ imageUrl, title, description, demoLink, githubLink }) {
   return (
     <div className="project-card">
       <div className="project-card__side project-card__side--front">
@@ -18,7 +18,23 @@ function Project({ imageUrl, title, description }) {
       </div>
 
       <div className="project-card__side project-card__side--back">
-        <h1>Project Card Back</h1>
+        <a
+          href={demoLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn--white u-margin-bottom-small"
+        >
+          Demo
+        </a>
+
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn--primary"
+        >
+          Github
+        </a>
       </div>
     </div>
   );

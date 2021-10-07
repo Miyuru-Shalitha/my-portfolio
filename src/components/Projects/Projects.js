@@ -20,6 +20,8 @@ function Projects() {
             dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur
             lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet,
             consectetur"
+          demoLink="https://random-quiz-web-app.netlify.app"
+          githubLink="https://github.com/Miyuru-Shalitha/quiz-app.git"
         />
 
         <Project
@@ -30,6 +32,8 @@ function Projects() {
             dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur
             lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet,
             consectetur"
+          demoLink="https://todolist-calendar.netlify.app"
+          githubLink="https://github.com/Miyuru-Shalitha/Todo-List.git"
         />
 
         <Project
@@ -40,6 +44,8 @@ function Projects() {
             dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur
             lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet,
             consectetur"
+          demoLink="https://mini-pomodoro-timer.netlify.app"
+          githubLink="https://github.com/Miyuru-Shalitha/pomodoro-timer.git"
         />
       </div>
     </section>

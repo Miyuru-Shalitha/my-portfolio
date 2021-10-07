@@ -5,6 +5,8 @@
   height: rem(500); // TEST
   perspective: rem(1500);
 
+  margin-bottom: rem(30); // TEST
+
   position: relative;
 
   &__side {
@@ -22,11 +24,28 @@
 
     &--front {
       background-color: #fff;
+
+      // display: none; // TEST
     }
 
     &--back {
-      background-color: #1fbe34; // TEST
+      // background-color: #1fbe34; // TEST
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark, 0.5),
+        rgba($color-primary-light, 0.5)
+      );
       transform: rotateY(180deg);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & > a {
+        width: 80%;
+        text-align: center;
+      }
     }
   }
 
