@@ -1,4 +1,4 @@
-@use "functions";
+@use "functions" as *;
 
 // COLORS
 :root {
@@ -33,3 +33,6 @@ $color-grey-dark-3: #333;
 
 // FONT SIZES
 $default-font-size: rem(16);
+
+// BORDER RADIUS
+$default-border-radius: 0 0 rem(10) rgba($color-grey-dark-1, 0.5);
