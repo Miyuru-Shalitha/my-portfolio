@@ -5,14 +5,14 @@
   height: rem(500); // TEST
   perspective: rem(1500);
 
-  margin-bottom: rem(30); // TEST
+  // margin-bottom: rem(30); // TEST
 
   position: relative;
 
   &__side {
     backface-visibility: hidden;
     border-radius: rem(5);
-    box-shadow: $default-border-radius;
+    box-shadow: $default-box-shadow;
     overflow: hidden;
     transition: all 0.8s;
 
