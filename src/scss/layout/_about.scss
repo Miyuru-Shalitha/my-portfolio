@@ -77,13 +77,14 @@
     &:not(:last-child) {
       margin-bottom: rem(20);
     }
+  }
 
-    &:hover {
-      transform: scale(1.1) skewX(-10deg);
+  &__paragraph-container:hover {
+    transform: scale(1.1) skewX(-10deg);
+    box-shadow: 0 0 rem(20) rgba($color-grey-dark-1, 0.2);
+  }
 
-      & > p {
-        transform: skewX(10deg);
-      }
-    }
+  &__paragraph-container:hover &__paragraph {
+    transform: skewX(10deg);
   }
 }
