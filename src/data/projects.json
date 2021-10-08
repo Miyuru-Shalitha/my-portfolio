@@ -1,0 +1,26 @@
+[
+  { 
+    "id": "0",
+    "imageUrl": "https://images.unsplash.com/photo-1633713577519-1fd65d6e5441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+    "projectName": "Quiz app",
+    "description": "lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur",
+    "demoLink": "https://random-quiz-web-app.netlify.app",
+    "githubLink": "https://github.com/Miyuru-Shalitha/quiz-app.git"
+  },
+  { 
+    "id": "1",
+    "imageUrl": "https://images.unsplash.com/photo-1633713577519-1fd65d6e5441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+    "projectName": "Todo-list calender",
+    "description": "lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur",
+    "demoLink": "https://todolist-calendar.netlify.app",
+    "githubLink": "https://github.com/Miyuru-Shalitha/Todo-List.git"
+  },
+  { 
+    "id": "2",
+    "imageUrl": "https://images.unsplash.com/photo-1633713577519-1fd65d6e5441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+    "projectName": "Pomodoro timer",
+    "description": "lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur",
+    "demoLink": "https://mini-pomodoro-timer.netlify.app",
+    "githubLink": "https://github.com/Miyuru-Shalitha/pomodoro-timer.git"
+  }
+]
