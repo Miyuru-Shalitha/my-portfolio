@@ -43,6 +43,7 @@
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
 
     color: var(--color-white);
     font-size: rem(32);
@@ -58,6 +59,7 @@
   &__image-container:hover &__caption {
     top: 50%;
     left: 50%;
+    opacity: 1;
   }
 
   &__description {
