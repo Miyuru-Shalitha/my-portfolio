@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
 
   // const encode = (data) => {
   //   return Object.keys(data)
@@ -29,13 +29,13 @@ function Contact() {
   //     .catch((error) => alert(error));
   // };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((preValue) => ({
-      ...preValue,
-      [name]: value,
-    }));
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((preValue) => ({
+  //     ...preValue,
+  //     [name]: value,
+  //   }));
+  // };
 
   return (
     <section id="contact" className="contact u-margin-top-medium">
@@ -59,8 +59,8 @@ function Contact() {
             name="name"
             id="name"
             placeholder="Name"
-            onChange={handleChange}
-            value={formData.name}
+            // onChange={handleChange}
+            // value={formData.name}
             required
           />
 
@@ -69,8 +69,8 @@ function Contact() {
             name="email"
             id="email"
             placeholder="Email"
-            onChange={handleChange}
-            value={formData.email}
+            // onChange={handleChange}
+            // value={formData.email}
             required
           />
 
@@ -80,8 +80,8 @@ function Contact() {
             cols="30"
             rows="10"
             placeholder="Enter message"
-            onChange={handleChange}
-            value={formData.message}
+            // onChange={handleChange}
+            // value={formData.message}
             required
           ></textarea>
 
