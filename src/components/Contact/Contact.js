@@ -16,6 +16,8 @@ function Contact() {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -25,9 +27,6 @@ function Contact() {
         alert("Success!");
       })
       .catch((error) => alert(error));
-
-    console.log(formData);
-    e.preventDefault();
   };
 
   const handleChange = (e) => {
