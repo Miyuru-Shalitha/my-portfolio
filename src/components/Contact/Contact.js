@@ -50,7 +50,12 @@ function Contact() {
       </div>
 
       <div className="contact__container u-margin-top-medium">
-        <form className="contact__form" onSubmit={handleSubmit} netlify>
+        <form
+          className="contact__form"
+          onSubmit={handleSubmit}
+          name="contact"
+          netlify
+        >
           <input
             name="name"
             id="name"
