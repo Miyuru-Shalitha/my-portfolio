@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
-
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -13,25 +7,26 @@ function Contact() {
     message: "",
   });
 
-  // const encode = (data) => {
-  //   return Object.keys(data)
-  //     .map(
-  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //     )
-  //     .join("&");
-  // };
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
 
   const handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", formData }),
+      body: encode({ "form-name": "contact", ...formData }),
     })
       .then(() => {
         alert("Success!");
       })
       .catch((error) => alert(error));
 
+    console.log(formData);
     e.preventDefault();
   };
 
@@ -54,25 +49,25 @@ function Contact() {
           className="contact__form"
           onSubmit={handleSubmit}
           name="contact"
-          method="post"
+          // method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contact" />
 
           <input
+            type="text"
             name="name"
             id="name"
-            type="text"
             placeholder="Name"
             onChange={handleChange}
             value={formData.name}
           />
 
           <input
+            type="email"
             name="email"
             id="email"
-            type="email"
             placeholder="Email"
             onChange={handleChange}
             value={formData.email}
