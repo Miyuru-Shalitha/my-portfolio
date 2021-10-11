@@ -47,12 +47,12 @@ function Contact() {
         <form
           className="contact__form"
           onSubmit={handleSubmit}
-          name="contact"
+          name="contact-form"
           // method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact-form" />
 
           <input
             type="text"
