@@ -7,27 +7,27 @@ function Contact() {
     message: "",
   });
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
+  // const encode = (data) => {
+  //   return Object.keys(data)
+  //     .map(
+  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+  //     )
+  //     .join("&");
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formData }),
-    })
-      .then(() => {
-        alert("Success!");
-      })
-      .catch((error) => alert(error));
-  };
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", ...formData }),
+  //   })
+  //     .then(() => {
+  //       alert("Success!");
+  //     })
+  //     .catch((error) => alert(error));
+  // };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -46,9 +46,9 @@ function Contact() {
       <div className="contact__container u-margin-top-medium">
         <form
           className="contact__form"
-          onSubmit={handleSubmit}
+          // onSubmit={handleSubmit}
           name="contact-form"
-          // method="post"
+          method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
@@ -61,6 +61,7 @@ function Contact() {
             placeholder="Name"
             onChange={handleChange}
             value={formData.name}
+            required
           />
 
           <input
@@ -70,6 +71,7 @@ function Contact() {
             placeholder="Email"
             onChange={handleChange}
             value={formData.email}
+            required
           />
 
           <textarea
@@ -80,6 +82,7 @@ function Contact() {
             placeholder="Enter message"
             onChange={handleChange}
             value={formData.message}
+            required
           ></textarea>
 
           <button className="contact__button btn btn--primary" type="submit">
