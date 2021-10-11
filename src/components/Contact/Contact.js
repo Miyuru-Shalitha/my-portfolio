@@ -38,7 +38,10 @@ function Contact() {
   // };
 
   return (
-    <section id="contact" className="contact u-margin-top-medium">
+    <section
+      id="contact"
+      className="contact u-margin-top-medium u-margin-bottom-medium"
+    >
       <div className="contact__heading">
         <h2 className="heading-secondary">Contact</h2>
       </div>
