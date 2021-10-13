@@ -74,3 +74,7 @@
     background-color: var(--color-primary-dark);
   }
 }
+
+.nav-animation {
+  animation: fade-out-and-in 2s;
+}

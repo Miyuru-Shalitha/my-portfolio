@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 
 function Navigation() {
+  const navEl = useRef(null);
+
+  const handleClick = () => {
+    navEl.current.classList.remove("nav-animation");
+
+    // if (navEl !== null) {
+    navEl.current.classList.add("nav-animation");
+    // }
+
+    setTimeout(() => {
+      navEl.current.classList.remove("nav-animation");
+    }, 2100); // The animation is 2s long.
+  };
+
   return (
-    <nav className="nav">
+    <nav ref={navEl} className="nav" onClick={handleClick}>
       <ul className="nav__list">
-        <li className="nav__item--active">
+        <li>
           <a href="#header">Home</a>
         </li>
         <li>
